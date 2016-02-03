@@ -11,7 +11,10 @@
    <extension qualifier="docker">
       <property name="dockerContainers">
            jboss:
-            image: test/wildfly
+            buildImage:
+              dockerfileLocation: src/test/resources/
+              noCache: false
+              remove: true
             portBindings: [9990->9990/tcp, 8080->8080/tcp]
             await:
                 strategy: polling
