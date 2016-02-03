@@ -18,8 +18,8 @@
             portBindings: [9990->9990/tcp, 8080->8080/tcp]
             await:
                 strategy: polling
-                sleepPollingTime: 15 s #1
-                iterations: 3 #2
+                sleepPollingTime: 15 s
+                iterations: 3
       </property>
   </extension>
 
