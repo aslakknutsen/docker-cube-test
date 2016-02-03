@@ -1,6 +1,6 @@
 FROM jboss/wildfly
 
-#RUN /opt/jboss/wildfly/bin/add-user.sh admin admin --silent
+RUN /opt/jboss/wildfly/bin/add-user.sh admin admin --silent
 
 # Expose the ports we're interested in
 EXPOSE 8080 9990
